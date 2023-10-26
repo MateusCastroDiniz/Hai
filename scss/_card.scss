@@ -1,0 +1,21 @@
+.card {
+    height: $height-default-card;
+    float: left;
+    border: none;
+    @include offset_theme;
+
+    .card-body {
+        &__button {
+            position: absolute;
+            margin-bottom: 1rem;
+            bottom: 0;
+            width: 90%;
+            @include offset_theme;
+        }
+    }
+
+    .card-footer {
+        background-color: var(--bs-card-bg);
+        border: none;
+    }
+}

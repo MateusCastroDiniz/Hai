@@ -1,0 +1,16 @@
+$font-text-default: 'Ubuntu',
+sans-serif !important;
+$gray-default: rgb(223, 223, 223);
+$header-height: 60px;
+$default-black: rgb(0, 0, 0);
+$width-sm-card: 15rem !important;
+$height-sm-card: 23rem;
+$padding-b-card: 1rem;
+$height-default-card: 27rem;
+$black-shadow: rgba(0, 0, 0, 0.774);
+
+@mixin dark-mode{
+    background-color: rgb(0, 21, 48);
+    border-bottom: rgba(255, 255, 255, 0.774);
+}
+

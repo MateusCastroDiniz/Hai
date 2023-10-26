@@ -1,0 +1,26 @@
+$default-black: #000000;
+$default-border-invalid: 1px solid #ff0000;
+$display-text-muted-start: none;
+$text-muted-color: #f00 !important;
+$span-avatar-visibility-start: hidden;
+
+
+option{
+    color:$default-black
+}
+
+.invalido{
+    border:$default-border-invalid;
+}
+
+.text-muted{
+    display: $display-text-muted-start;
+ }
+
+small.text-muted{
+    color: $text-muted-color;
+}
+
+#span-avatar{
+    visibility: $span-avatar-visibility-start;
+}

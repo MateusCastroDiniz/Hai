@@ -1,0 +1,147 @@
+body {
+  margin: auto;
+  padding: auto;
+  font-family: "Ubuntu", sans-serif !important; }
+
+header {
+  background-color: #dfdfdf; }
+  header .row-header {
+    height: 60px;
+    align-items: center; }
+
+a {
+  text-decoration: none;
+  color: black; }
+  a__link-logo, a__link-logo:visited, a__link-logo:active {
+    text-decoration: none !important; }
+  a__link-logo:hover {
+    text-decoration: underline; }
+
+#link-cardapio {
+  box-shadow: 0 0 7px 1px #CFCFCF;
+  border: none;
+  background-color: #ffff;
+  color: black; }
+
+td {
+  width: 50%;
+  text-align: start; }
+
+#lista-de-itens {
+  align-items: center;
+  padding: 0;
+  gap: 5px; }
+
+#produtos {
+  margin: 0rem 0 2.5rem 0; }
+  #produtos h1 {
+    margin-bottom: 2rem; }
+
+.form-floating label {
+  color: black;
+  font-size: small; }
+
+input {
+  border-radius: 2rem; }
+
+#body-modal-contato {
+  padding-top: 0; }
+
+#contato-container {
+  color: #ffff;
+  padding: 0 0 2rem 0; }
+  #contato-container div.row {
+    align-items: center;
+    display: flex;
+    flex-direction: column; }
+    #contato-container div.row h4 {
+      font-weight: 200; }
+
+#bloco-texto-contato {
+  text-align: center;
+  color: #000000; }
+
+.row {
+  margin: 0; }
+
+.card {
+  height: 27rem;
+  float: left;
+  border: none;
+  box-shadow: 0 0 7px 1px #CFCFCF;
+  border: none;
+  background-color: #ffff;
+  color: black; }
+  .card .card-body__button {
+    position: absolute;
+    margin-bottom: 1rem;
+    bottom: 0;
+    width: 90%;
+    box-shadow: 0 0 7px 1px #CFCFCF;
+    border: none;
+    background-color: #ffff;
+    color: black; }
+  .card .card-footer {
+    background-color: var(--bs-card-bg);
+    border: none; }
+
+#lista-de-itens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.carousel .carousel-caption {
+  position: absolute;
+  bottom: 35%;
+  padding-top: 1.25rem;
+  color: #fff;
+  text-align: bottom;
+  border-radius: 3rem;
+  transition: 2s; }
+
+.carousel .carousel-inner:hover .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.774);
+  padding: 3rem; }
+
+.carousel .text-carousel h1 {
+  font-weight: 900; }
+
+.carousel .text-carousel h3 {
+  font-weight: 800; }
+
+.owl-stage {
+  padding: 10px 0 10px 0; }
+
+.modal-body {
+  border: none;
+  padding-bottom: 0; }
+
+.modal-footer {
+  border: none;
+  padding-top: 0; }
+
+footer {
+  box-shadow: 0 0 7px 1px #CFCFCF;
+  border: none;
+  background-color: #ffff;
+  color: black;
+  background-color: #dfdfdf; }
+  footer ul,
+  footer ul a {
+    list-style: none;
+    text-decoration: none;
+    color: #000000; }
+  footer ul a:hover {
+    text-decoration: underline;
+    color: #5f5f5f; }
+
+#lista-midias {
+  display: flex;
+  justify-content: center; }
+  #lista-midias ul {
+    list-style: none; }
+
+@media (max-width: 600px) {
+  .card {
+    height: 23rem;
+    padding-bottom: 1rem; } }

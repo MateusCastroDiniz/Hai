@@ -1,0 +1,28 @@
+
+.carousel{
+    .carousel-caption {
+        position: absolute;
+        bottom: 35%;
+        padding-top: 1.25rem;
+        color: #fff;
+        text-align: bottom;
+        border-radius: 3rem;
+        transition: 2s;
+    }
+
+    .carousel-inner:hover .carousel-caption {
+        background-color: $black-shadow;
+        padding: 3rem;
+    }
+    .text-carousel h1 {
+        font-weight: 900;
+    }
+    .text-carousel h3 {
+        font-weight: 800;
+    }
+}
+
+.owl-stage{
+    padding: 10px 0 10px 0;
+}
+

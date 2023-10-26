@@ -1,0 +1,14 @@
+option {
+  color: #000000; }
+
+.invalido {
+  border: 1px solid #ff0000; }
+
+.text-muted {
+  display: none; }
+
+small.text-muted {
+  color: #f00 !important; }
+
+#span-avatar {
+  visibility: hidden; }

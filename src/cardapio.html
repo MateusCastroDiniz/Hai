@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/libs.min.css">
+    <link rel="stylesheet" href="./icones/icons-1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <title>Cardápio</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-3">
+                    <a class="a__link-logo" href="./index.html">
+                        <h2>Hai!</h2>
+                    </a>
+                </div>
+                <div class="col-9">
+                    <!-- <div id="menu-links" class="btn-group float-end">
+                                <a href="#produtos" class="btn btn-sm btn-primary rounded-start-pill">Produtos</a>
+                                <a href="#footer-contato" class="btn btn-sm btn-primary rounded-end-pill">Contato</a>
+                            </div> -->
+                    <a class="navbar-toggler border-0 d-block float-end" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menu" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="bi bi-list fs-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Adicione aqui um divider -->
+
+        <div class="container collapse pb-3" id="menu">
+            <div class="row">
+                <div class="col-6 text-start float-start">
+                    <div class="vstack gap-2 text-start">
+                        <ul class="text-start m-0 p-0" style="list-style: none;">
+                            <li>
+                                <h5><a class="fw-light" href="./index.html">Início</a></h5>
+                            </li>
+                            <li>
+                                <h5><a class="fw-light" href="./cadastro-form.html">Minha conta</a></h5>
+                            </li>
+                            <li>
+                                <h5><a class="fw-light" href="./cardapio.html">Cardápio</a></h5>
+                            </li>
+                            <li>
+                                <h5><a class="fw-light" href="./duvidas-frequentes.html">Dúvidas frequentes</a></h5>
+                            </li>
+                            <li>
+                                <h5><a class="fw-light" href="./contato.html">Fale conosco</a></h5>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+        </div>
+        </div>
+
+    </header>
+
+
+    <section id="produtos" class="mt-5">
+        <div class="container">
+            <div class="row">
+
+                <p class="text-center fs-1 fw-normal mb-4 mt-4">Comida Japonesa</p>
+
+                <div id="lista-de-itens" class="col col-sm-12 m-auto owl-carousel">
+
+                    <div class="item">
+                        <a href="" class="nav-modal-open" rel="temaki-text">
+                            <div id="card-temaki" class="card">
+                                <img src="./img/temaki.jpg" alt="" class="card-img-top">
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title">Temaki</h5>
+                                    <p class="card-text">Arroz japonês, saquê, Aji-no-moto®, 400 g de salmão em cubos,
+                                        Cream
+                                        Cheese, cebolinha e folhas de nori.</p>
+                                    <a class="btn btn-primary mt-auto add-carrinho-btn card-body__button">Adicionar ao carrinho</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="" class="nav-modal-open" rel="harumaki-text">
+                            <div id="card-harumaki" class="card">
+                                <img class="card-img-top" src="./img/harumaki.jpg" alt="">
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title">Harumaki</h5>
+                                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Expedita
+                                    </p>
+                                    <a class="btn btn-primary mt-auto add-carrinho-btn card-body__button">Adicionar ao carrinho</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a class="nav-modal-open" rel="sunomono-text">
+                            <div id="card-sunomono" class="card m-0 p-0">
+                                <img class="card-img-top" src="./img/sunomono.jpg" alt="">
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title">Sunomono</h5>
+                                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Expedita
+                                    </p>
+                                    <a class="btn btn-primary mt-auto add-carrinho-btn card-body__button">Adicionar ao carrinho</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="" class="nav-modal-open" rel="guioza-text">
+                            <div id="card-guioza" class="card">
+                                <img class="card-img-top" src="./img/guioza.jpeg" alt="">
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title">Guioza</h5>
+                                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Expedita
+                                    </p>
+                                    <a class="btn btn-primary mt-auto add-carrinho-btn card-body__button">Adicionar ao carrinho</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="text-center fs-1 fw-normal mb-4 mt-4">Novos pratos estão por vir...</p>
+
+                <div id="lista-de-itens" class="col col-sm-12 m-auto owl-carousel">
+
+                    <div class="item">
+                        <div class="card w-100" aria-hidden="true">
+                            <span class=" card-img-top h-50 placeholder"></span>
+                            <div class="card-body">
+                                <h3 class="card-title placeholder-glow">
+                                    <span class="placeholder col-6"></span>
+                                </h3>
+                                <p class="card-text placeholder-glow mb-1">
+                                    <span class="placeholder col-7"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-6"></span>
+                                    <span class="placeholder col-8"></span>
+                                </p>
+                                <a class="btn btn-primary mt-auto add-carrinho-btn disabled placeholder card-body__button"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card w-100" aria-hidden="true">
+                            <span class=" card-img-top h-50 placeholder"></span>
+                            <div class="card-body">
+                                <h3 class="card-title placeholder-glow">
+                                    <span class="placeholder col-6"></span>
+                                </h3>
+                                <p class="card-text placeholder-glow mb-1">
+                                    <span class="placeholder col-7"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-6"></span>
+                                    <span class="placeholder col-8"></span>
+                                </p>
+                                <a class="btn btn-primary mt-auto add-carrinho-btn disabled placeholder card-body__button"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card w-100" aria-hidden="true">
+                            <span class=" card-img-top h-50 placeholder"></span>
+                            <div class="card-body">
+                                <h3 class="card-title placeholder-glow">
+                                    <span class="placeholder col-6"></span>
+                                </h3>
+                                <p class="card-text placeholder-glow mb-1">
+                                    <span class="placeholder col-7"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-6"></span>
+                                    <span class="placeholder col-8"></span>
+                                </p>
+                                <a class="btn btn-primary mt-auto add-carrinho-btn disabled placeholder card-body__button"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card w-100" aria-hidden="true">
+                            <span class=" card-img-top h-50 placeholder"></span>
+                            <div class="card-body">
+                                <h3 class="card-title placeholder-glow">
+                                    <span class="placeholder col-6"></span>
+                                </h3>
+                                <p class="card-text placeholder-glow mb-1">
+                                    <span class="placeholder col-7"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-6"></span>
+                                    <span class="placeholder col-8"></span>
+                                </p>
+                                <a class="btn btn-primary mt-auto add-carrinho-btn disabled placeholder card-body__button"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="carrinho-sucess" class="toast align-items-center text-bg-success border-0" role="alert"
+            aria-live="assertive" aria-atomic="true">
+            <div class="toast-body ">
+                <p class="m-0 p-0">Adicionado ao carrinho!</p>
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                aria-label="Close"></button>
+
+        </div>
+    </div>
+
+    <div id="textos-itens">
+        <div id="temaki-text" class="visually-hidden">
+            <h5 class="modal-title">Detalhes do pedido</h5>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Descrição:</td>
+                        <td>Produtos alimentícios</td>
+                    </tr>
+                    <tr>
+                        <td>Culinária:</td>
+                        <td>Japonesa</td>
+                    </tr>
+                    <tr>
+                        <td>Ingredientes</td>
+                        <td>Arroz tipo japonês, saquê culinário, AJI-NO-MOTO®, 400 g de salmão cortado em cubos
+                            pequenos, Cream Cheese, cebolinha, folhas de nori cortadas ao meio.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Porções disponíveis:</td>
+                        <td>2 unidades, 3 unidades e 4 unidades</td>
+                    </tr>
+                    <tr>
+                        <td>Peso das porções:</td>
+                        <td>300g(2 un), 500g (3 un) e 700g (4 un)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="harumaki-text" class="visually-hidden">
+            <h5 class="modal-title">Detalhes do pedido</h5>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Descrição:</td>
+                        <td>Produtos alimentícios</td>
+                    </tr>
+                    <tr>
+                        <td>Culinária:</td>
+                        <td>Japonesa</td>
+                    </tr>
+                    <tr>
+                        <td>Ingredientes</td>
+                        <td>Carne de porco moída, Cenoura ralada, alho, caldo de costelinha de porco, lâminas de
+                            repolho e cebola.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Porções disponíveis (por pessoa):</td>
+                        <td>1 pessoas, 2 pessoas</td>
+                    </tr>
+                    <tr>
+                        <td>Peso das porções:</td>
+                        <td>150g(1p), 300g(2p)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="sunomono-text" class="visually-hidden">
+            <h5 class="modal-title">Detalhes do pedido</h5>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Descrição:</td>
+                        <td>Produtos alimentícios</td>
+                    </tr>
+                    <tr>
+                        <td>Culinária:</td>
+                        <td>Japonesa</td>
+                    </tr>
+                    <tr>
+                        <td>Ingredientes</td>
+                        <td>Lâminas de pepino, vinagre de arroz, gergelim branco e/ou preto, sal do himalaia e
+                            açúcar.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Porções disponíveis (por pessoa):</td>
+                        <td>1 pessoas, 2 pessoas</td>
+                    </tr>
+                    <tr>
+                        <td>Peso das porções:</td>
+                        <td>150g(1p), 300g(2p)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="guioza-text" class="visually-hidden">
+            <h5 class="modal-title">Detalhes do pedido</h5>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Descrição:</td>
+                        <td>Produtos alimentícios</td>
+                    </tr>
+                    <tr>
+                        <td>Culinária:</td>
+                        <td>Japonesa</td>
+                    </tr>
+                    <tr>
+                        <td>Ingredientes</td>
+                        <td>Massa de farinha de trigo, carne de porco moída, gengibre, saquê especial, Shoyu,
+                            repolho em tiras, cebolinha e óleo de gergelim.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Porções disponíveis (por pessoa):</td>
+                        <td>1 pessoas, 2 pessoas</td>
+                    </tr>
+                    <tr>
+                        <td>Peso das porções:</td>
+                        <td>150g(1p), 300g(2p)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal fade" id="modal-root">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer-contato" class="p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 text-center">
+                    <ul class="footer__list">
+                        <h3>Links</h3>
+                        <li>
+                            <a class="fw-light footer__list-link" href="./index.html">Início</a>
+                        </li>
+                        <li>
+                            <a class="fw-light footer__list-link" href="./cadastro-form.html">Minha conta</a>
+                        </li>
+                        <li>
+                            <a class="fw-light footer__list-link" href="./cardapio.html">Cardápio</a>
+                        </li>
+                        <li>
+                            <a class="fw-light footer__list-link" href="./duvidas-frequentes.html">Dúvidas frequentes</a>
+                        </li>
+                        <li>
+                            <a class="fw-light footer__list-link" href="./contato.html">Fale conosco</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-6 text-center border-start border-secondary border-1">
+
+                    <h3 class="mb-3">Contato</h3>
+
+                    <div id="lista-midias">
+                        <ul class="m-0 p-0 d-flex gap-3">
+                            <li>
+                                <a id="twitter-icon" class="text-center" target="_blank" href="">
+                                    <i class="bi bi-whatsapp fs-3"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a id="whatsapp-icon" class="text-center" target="_blank"
+                                    href="https://www.instagram.com/mateusdiniz.s/">
+                                    <i class="bi bi-instagram fs-3"></i>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a id="instagram-icon" class="text-center" target="_blank"
+                                    href="https://www.linkedin.com/in/mateus-diniz-5974a2264">
+                                    <i class="bi bi-linkedin fs-3"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a id="github-icon" class="text-center" target="_blank"
+                                    href="https://github.com/MateusCastroDiniz">
+                                    <i class="bi bi-github fs-3"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/libs.min.js"></script>
+
+</body>
+
+</html>
