@@ -69,11 +69,104 @@
     </header>
 
 
+    <div class="modal fade" id="suporteCEP" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container mt-3">
+                        <div class="row justify-content-center">
+                            <div class="col-9">
+                                <form>
+                                    <h3>Preencha seus dados abaixo</h3>
+                                    <label for="input-estado" class="form-label text-center">Estado</label>
+                                    <div class="input-group ">
+                                        <select id="input-estado" name="estado" class="form-select mb-3">
+                                            <option selected>Selecione seu estado</option>
+                                            <option value="AC">Acre</option>
+                                            <option value="AL">Alagoas</option>
+                                            <option value="AP">Amapá</option>
+                                            <option value="AM">Amazonas</option>
+                                            <option value="BA">Bahia</option>
+                                            <option value="CE">Ceará</option>
+                                            <option value="DF">Distrito Federal</option>
+                                            <option value="ES">Espírito Santo</option>
+                                            <option value="GO">Goiás</option>
+                                            <option value="MA">Maranhão</option>
+                                            <option value="MT">Mato Grosso</option>
+                                            <option value="MS">Mato Grosso do Sul</option>
+                                            <option value="MG">Minas Gerais</option>
+                                            <option value="PA">Pará</option>
+                                            <option value="PB">Paraíba</option>
+                                            <option value="PR">Paraná</option>
+                                            <option value="PE">Pernambuco</option>
+                                            <option value="PI">Piauí</option>
+                                            <option value="RJ">Rio de Janeiro</option>
+                                            <option value="RN">Rio Grande do Norte</option>
+                                            <option value="RS">Rio Grande do Sul</option>
+                                            <option value="RO">Rondônia</option>
+                                            <option value="RR">Roraima</option>
+                                            <option value="SC">Santa Catarina</option>
+                                            <option value="SP">São Paulo</option>
+                                            <option value="SE">Sergipe</option>
+                                            <option value="TO">Tocantins</option>
+                                        </select>
+                                    </div>
+                                    <label for="input-cidade" class="form-label text-center">Cidade.</label>
+                                    <div class="input-group">
+                                        <input id="input-cidade" type="text" class="form-control mb-3"
+                                            placeholder="Digite o nome de sua cidade">
+                                    </div>
+                                    <label for="input-bairro" class="form-label text-center">Bairro.</label>
+                                    <div class="input-group">
+                                        <input id="input-bairro" type="text" class="form-control mb-3"
+                                            placeholder="Digite o nome de sua bairro">
+                                    </div>
+                                    <label for="input-rua" class="form-label text-center">Rua.</label>
+                                    <div class="input-group">
+                                        <input id="input-rua" type="text" class="form-control mb-3"
+                                            placeholder="Digite o nome da sua rua">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="buscar-CEP" type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#respostaCEP">Procurar CEP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="respostaCEP" tabindex="-1" aria-labelledby="respostaCEPlabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Aqui está o seu CEP</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="resultado-CEP" class="fs-1 fw-light text-center"></p>
+                    <p id="resultado-alerta" class="fs-3 fw-light text-center"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                        data-bs-target="#suporteCEP">Revisar informações</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <section id="cadastro-form" class="mt-4 mb-4">
         <div class="container">
             <div class="row justify-content-center">
             <div class="col-12 col-md-10">
-            <form class="form text-start mb-4 flex-column align-items-stretch">
+            <form id="form-cadastro" class="form text-start mb-4 flex-column align-items-stretch">
 
 
                 <div id="info-user" class="row">
@@ -86,13 +179,13 @@
                                 <label for="nome">Nome:</label>
                                 <input id="nome-input" type="text" name="nome" class="form-control obrigatorio"
                                     placeholder="Digite o seu nome">
-                                <small class="text-muted">*Insira um valor válido*</small>
+                                <small class="text-muted">*Insira um nome válido*</small>
                             </div>
                             <div class="col-12 mb-3">
                                 <label for="fone">Telefone:</label>
                                 <input id="fone-input" type="text" name="fone" class="form-control"
                                     placeholder="Ex.:(xx)xxxxx-xxxx">
-                                <small class="text-muted">*Insira um valor válido*</small>
+                                <small class="text-muted">*Insira um número de telefone válido*</small>
                             </div>
                             <div class="col-12 mb-3">
                                 <label for="email">Email:</label>
@@ -144,6 +237,11 @@
                             <label for="cep">CEP:</label>
                             <input id="cep-input" type="text" name="cep" class="form-control obrigatorio"
                                 placeholder="Ex.: xxxxx-xxx">
+                            <a href="" class="form-text" data-bs-toggle="modal" data-bs-target="#suporteCEP"><u>
+                                Encontre
+                                    seu
+                                    CEP
+                            </u></a>
                             <small class="text-muted">*Insira um valor válido*</small>
                         </div>
                         <div class="col-12 ">
