@@ -47,7 +47,7 @@ function tarefasJS() {
                 "node_modules/bootstrap/dist/js/bootstrap.js",
                 "./lib/owl/dist/owl.carousel.js",
                 "./src/js/**.js",
-                "lib/jquery.mask.js"
+                "./lib/jquery.mask.js"
             ])
         .pipe(babel({
             comments: false,

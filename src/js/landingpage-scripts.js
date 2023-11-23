@@ -4,9 +4,6 @@ $(document).ready(function(){
           loop: true,
           dots:true,
           dotsEach: 1,
-          autoplay: false,
-          dotsContainer:true,
-          autoplayTimeout: 2300,
           responsive: {
             0: {
               items: 1.3
