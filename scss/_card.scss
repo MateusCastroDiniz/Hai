@@ -12,10 +12,21 @@
             width: 90%;
             @include offset_theme;
         }
+
+        .card-title{
+            color: $black-default;
+        }
+        .card-text{
+            color: $black-default;
+        }
     }
 
     .card-footer {
         background-color: var(--bs-card-bg);
         border: none;
     }
+}
+
+.card-services{
+    height: 300px;
 }

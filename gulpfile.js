@@ -18,7 +18,7 @@ const reload = browserSync.reload
 function tarefasSass(cb) {
     gulp.src('./scss/**.scss')
         .pipe(sass())
-        .pipe(gulp.dest('./src/css'))
+        .pipe(gulp.dest('./src/assets/css'))
     return cb()
 }
 
@@ -26,8 +26,8 @@ function tarefasSass(cb) {
 function tarefasCSS() {
     return gulp.src(
             [
-                './bootstrap/css/bootstrap.css',
-                './src/css/**.css',
+                'node_modules/bootstrap/dist/css/bootstrap.css',
+                './src/assets/css/**.css',
                 './lib/owl/dist/assets/owl.carousel.css',
                 './lib/owl/dist/assets/owl.theme.default.css'
             ])
@@ -36,7 +36,7 @@ function tarefasCSS() {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest('./dist/css'))
+        .pipe(gulp.dest('./dist/assets/css'))
 }
 
 
@@ -44,9 +44,9 @@ function tarefasJS() {
     return gulp.src(
             [
                 "lib/jquery.js",
-                "./bootstrap/js/bootstrap.js",
-                "./src/scripts/**.js",
+                "node_modules/bootstrap/dist/js/bootstrap.js",
                 "./lib/owl/dist/owl.carousel.js",
+                "./src/js/**.js",
                 "lib/jquery.mask.js"
             ])
         .pipe(babel({
@@ -64,23 +64,23 @@ function tarefasJS() {
 
 // POC -- Proof of Concept
 
-function tarefasHTML(callback) {
+function tarefasHTML(cb) {
     gulp.src('./src/*.html')
         .pipe(htmlmin({
             collapseWhitespace: true
         }))
         .pipe(gulp.dest('./dist'))
-    return callback()
+    return cb()
 }
 
-function tarefasIcones() {
-    return gulp.src('./assets/**')
-        .pipe(gulp.dest('./dist'))
+function tarefasVetores() {
+    return gulp.src('./src/assets/vetores/**')
+        .pipe(gulp.dest('./dist/assets/vetores'))
 }
 
 function tarefasImg() {
-    return gulp.src('./src/img/**')
-        .pipe(gulp.dest('./dist/img'))
+    return gulp.src('./src/assets/img/**')
+        .pipe(gulp.dest('./dist/assets/img'))
 }
 
 
@@ -102,7 +102,7 @@ function end(cb) {
 }
 
 
-const process = series(tarefasSass, tarefasCSS, tarefasJS, tarefasHTML, end)
+const process = series(tarefasSass, tarefasCSS, tarefasJS, tarefasHTML, tarefasVetores, tarefasImg, end)
 
 exports.sass = tarefasSass
 
@@ -112,9 +112,6 @@ exports.scripts = tarefasJS
 
 exports.arquivos = tarefasHTML
 
-exports.icones = tarefasIcones
-
 exports.img = tarefasImg
-
 
 exports.default = process
